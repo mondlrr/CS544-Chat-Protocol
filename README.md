@@ -2,7 +2,7 @@
 
 ### Jaz Zhou (jz878@drexel.edu)
 ### Demo: https://youtu.be/i3k7Nn3DK8Y
-This project implements a stateful chat protocol using the QUIC transport layer, building upon the foundational echo server provided by Professor Brian Mitchell. It features both client and server components. The server can handle multiple clients concurrently and includes functionalities such as login authentication, one-to-one messaging, one-to-many messaging, and broadcasting messages.
+This project implements a stateful chat protocol using the QUIC transport layer, building upon the foundational echo server provided by Professor Brian Mitchell. It features both client and server components. The server can handle multiple clients concurrently and includes functionalities such as login authentication, one-to-one messaging, one-to-many messaging, and broadcasting messages
 
 ## Project Structure
 
@@ -52,19 +52,22 @@ python chat_client.py
 You will need to enter your username and password as prompted:
 
 ```plaintext
-Enter username: alice
-Enter password: p1
+Enter username: pam
+Enter password: pam
 ```
 
 #### User Database Example
 For illustration purposes, the `user_db.py` contains only three users defined as follows:
 
 ``` python
-self.users = {
-    "alice": bcrypt.hashpw("p1".encode(), bcrypt.gensalt()),
-    "bob": bcrypt.hashpw("p2".encode(), bcrypt.gensalt()),
-    "cam": bcrypt.hashpw("p3".encode(), bcrypt.gensalt())
-}
+elf.users = {
+            "one": bcrypt.hashpw("one".encode(), bcrypt.gensalt()),
+            "two": bcrypt.hashpw("two".encode(), bcrypt.gensalt()),
+            "three": bcrypt.hashpw("three".encode(), bcrypt.gensalt())
+            "micheal": bcrypt.hashpw("micheal".encode(), bcrypt.gensalt()),
+            "pam": bcrypt.hashpw("pam".encode(), bcrypt.gensalt()),
+            "dwight": bcrypt.hashpw("dwight".encode(), bcrypt.gensalt())
+        }
 ```
 
 ### Sending Messages
@@ -93,7 +96,7 @@ user_id: Your message here
 Example:
 
 ```sh
-1: Hi Alice, how are you today?
+1: Hi dwight, how are you today?
 ```
 
 #### One-to-Many Messaging
@@ -121,11 +124,11 @@ Here is what an example session might look like from login to logout:
 
 ```sh
 # User logs in
-Enter username: alice
-Enter password: p1
+Enter username: pam
+Enter password: pam
 
 # User sends a one-to-one message
-1: Hi Alice, how are you today?
+1: Hi dwight, how are you today?
 
 # User sends a one-to-many message
 1,3: Meeting at 3 PM, don't forget!
