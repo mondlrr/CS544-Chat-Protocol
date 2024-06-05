@@ -196,7 +196,7 @@ Transitions between these states are triggered by events such as successful conn
 - **Any to DISCONNECTING**: Initiate disconnection.
 - **DISCONNECTING to DISCONNECTED**: Disconnection complete.
 
-![DFA Diagram](dfa_jaz.png "DFA Diagram of States")
+![DFA Diagram](dfa_jaz.jpeg "DFA Diagram of States")
 
 ## Extra Credit
 - **Asynchronous Implementation**: The server can handle multiple clients concurrently, demonstrating the use of asyncio for asynchronous operations.
