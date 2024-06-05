@@ -1,7 +1,7 @@
 # Chat Protocol Implementation Using QUIC
 
 ### Jaz Zhou (jz878@drexel.edu)
-This project is the implementation of a stateful chat protocol using the QUIC transport layer, building upon the foundational echo server provided by Professor Brian Mitchell. It includes both a client and a server component, demonstrating the protocol's functionalities as specified in the CS544 Computer Networks course.
+This project implements a stateful chat protocol using the QUIC transport layer, building upon the foundational echo server provided by Professor Brian Mitchell. It features both client and server components. The server can handle multiple clients concurrently and includes functionalities such as login authentication, one-to-one messaging, one-to-many messaging, and broadcasting messages
 
 ## Project Structure
 
