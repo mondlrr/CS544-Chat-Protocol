@@ -5,9 +5,12 @@ class UserDatabase:
     def __init__(self):
         # Example user database
         self.users = {
-            "alice": bcrypt.hashpw("p1".encode(), bcrypt.gensalt()),
-            "bob": bcrypt.hashpw("p2".encode(), bcrypt.gensalt()),
-            "cam": bcrypt.hashpw("p3".encode(), bcrypt.gensalt())
+            "one": bcrypt.hashpw("one".encode(), bcrypt.gensalt()),
+            "two": bcrypt.hashpw("two".encode(), bcrypt.gensalt()),
+            "three": bcrypt.hashpw("three".encode(), bcrypt.gensalt())
+            "micheal": bcrypt.hashpw("micheal".encode(), bcrypt.gensalt()),
+            "pam": bcrypt.hashpw("pam".encode(), bcrypt.gensalt()),
+            "dwight": bcrypt.hashpw("dwight".encode(), bcrypt.gensalt())
         }
         self.active_users = {}  # Maps user ID to username
         self.user_id_counter = 0
