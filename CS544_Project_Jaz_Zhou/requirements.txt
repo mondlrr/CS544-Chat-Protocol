@@ -10,3 +10,4 @@ pycparser==2.21
 pylsqpack==0.3.18
 pyOpenSSL==24.1.0
 service-identity==24.1.0
+bcrypt==4.1.3
